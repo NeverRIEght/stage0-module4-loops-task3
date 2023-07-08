@@ -13,6 +13,7 @@ public class DigitsSum {
                 sum += ((t % divider) - (t % (divider / 10))) / (divider / 10);
             }
         }
+        sum = sum < 0 ? -sum : sum;
         System.out.println(sum);
     }
 }
