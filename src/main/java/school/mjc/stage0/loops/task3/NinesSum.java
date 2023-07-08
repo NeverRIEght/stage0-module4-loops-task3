@@ -7,7 +7,7 @@ public class NinesSum {
             if (i == 1) {
                 sum += 9;
             } else {
-                sum += 9 * (int) Math.pow(10, i - 1);
+                sum += 9 * (int) Math.pow(10, i - 1) + sum;
             }
         }
         System.out.println(sum);
